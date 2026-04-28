@@ -4,15 +4,13 @@ static class Program
 {
     static void Main(string[] args)
     {
-        Console.Write("値1を入力してください->");
-        var a = Console.ReadLine();
-        Console.Write("値2を入力してください->");
-        var b = Console.ReadLine();
-
-        if (a == b) 
+        for (int i = 0; i < 6; i++)
         {
-            Console.WriteLine("値1と値2は等しい");
-            Console.WriteLine("ですって！！！");
+            if (i == 2)
+            {
+                continue;
+            }
+            Console.WriteLine($"i = {i}");
         }
         Console.WriteLine("終了");
     }
